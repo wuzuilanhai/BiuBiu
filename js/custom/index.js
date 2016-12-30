@@ -51,6 +51,34 @@ $(document).ready(function () {
                 '<li><a href="news.html" class="news-icon"><span class="glyphicon glyphicon-envelope"' +
                 ' aria-hidden="true"></span>'+data.categoryResultDtoList[3].name+'</a></li>'
             );
+
+            $.each(data.recentlyVideos,function (i,video) {
+                $("#recentlyVideo").after(
+                    '<div class="col-md-4 resent-grid recommended-grid slider-top-grids">'+
+                    '<div class="resent-grid-img recommended-grid-img">'+
+                    '<a href="single.html"><img src="'+video.realUrl+'" alt=""/></a>'+
+                    '<div class="time">'+
+                    '<p>'+video.duration+'</p>'+
+                    '</div>'+
+                    ' <div class="clck">'+
+                    ' <span class="glyphicon glyphicon-time" aria-hidden="true"></span>'+
+                    '  </div>'+
+                    ' </div>'+
+                    '  <div class="resent-grid-info recommended-grid-info">'+
+                    '   <h3><a href="single.html" class="title title-info">'+video.remark+'</a></h3>'+
+                    '<ul>'+
+                    '<li><p class="author author-info"><a href="#" class="author">John Maniya</a></p></li>'+
+                    '<li class="right-list"><p class="views views-info">'+video.views+' views</p></li>'+
+                    '</ul>'+
+                    '</div>'+
+                    '</div>'
+                );
+            });
+
+            $("#recentlyVideo").after(
+            '<div class="clearfix"></div>'
+            );
+
         },
         error: function (xhr, textStatus) {
             console.log('错误');
