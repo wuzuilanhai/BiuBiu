@@ -14,6 +14,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- Custom Theme files -->
 <link href="css/style.css" rel='stylesheet' type='text/css' media="all" />
 <script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/custom/show.js"></script>
 <!--start-smoth-scrolling-->
 <!-- fonts -->
 <!--<link href='http://fonts.useso.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>-->
@@ -241,38 +242,38 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				  <ul class="nav nav-sidebar">
 					<li><a href="index.html" class="home-icon"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>Home</a></li>
 					<li class="active"><a href="shows.html" class="user-icon"><span class="glyphicon glyphicon-home glyphicon-blackboard" aria-hidden="true"></span>TV Shows</a></li>
-					<li><a href="history.html" class="sub-icon"><span class="glyphicon glyphicon-home glyphicon-hourglass" aria-hidden="true"></span>History</a></li>
-					<li><a href="#" class="menu1"><span class="glyphicon glyphicon-film" aria-hidden="true"></span>Movies<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a></li>
-						<ul class="cl-effect-2">
-							<li><a href="movies.html">English</a></li>                                             
-							<li><a href="movies.html">Chinese</a></li>
-							<li><a href="movies.html">Hindi</a></li> 
-						</ul>
-						<!-- script-for-menu -->
-						<script>
-							$( "li a.menu1" ).click(function() {
-							$( "ul.cl-effect-2" ).slideToggle( 300, function() {
-							// Animation complete.
-							});
-							});
-						</script>
-					<li><a href="#" class="menu"><span class="glyphicon glyphicon-film glyphicon-king" aria-hidden="true"></span>Sports<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a></li>
-						<ul class="cl-effect-1">
-							<li><a href="sports.html">Football</a></li>                                             
-							<li><a href="sports.html">Cricket</a></li>
-							<li><a href="sports.html">Tennis</a></li> 
-							<li><a href="sports.html">Shattil</a></li>  
-						</ul>
-						<!-- script-for-menu -->
-						<script>
-							$( "li a.menu" ).click(function() {
-							$( "ul.cl-effect-1" ).slideToggle( 300, function() {
-							// Animation complete.
-							});
-							});
-						</script>
-					<li><a href="movies.html" class="song-icon"><span class="glyphicon glyphicon-music" aria-hidden="true"></span>Songs</a></li>
-					<li><a href="news.html" class="news-icon"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>News</a></li>
+					<li id="appendLi"><a href="history.html" class="sub-icon"><span class="glyphicon glyphicon-home glyphicon-hourglass" aria-hidden="true"></span>History</a></li>
+					<!--<li><a href="#" class="menu1"><span class="glyphicon glyphicon-film" aria-hidden="true"></span>Movies<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a></li>-->
+						<!--<ul class="cl-effect-2">-->
+							<!--<li><a href="movies.html">English</a></li>                                             -->
+							<!--<li><a href="movies.html">Chinese</a></li>-->
+							<!--<li><a href="movies.html">Hindi</a></li> -->
+						<!--</ul>-->
+						<!--&lt;!&ndash; script-for-menu &ndash;&gt;-->
+						<!--<script>-->
+							<!--$( "li a.menu1" ).click(function() {-->
+							<!--$( "ul.cl-effect-2" ).slideToggle( 300, function() {-->
+							<!--// Animation complete.-->
+							<!--});-->
+							<!--});-->
+						<!--</script>-->
+					<!--<li><a href="#" class="menu"><span class="glyphicon glyphicon-film glyphicon-king" aria-hidden="true"></span>Sports<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a></li>-->
+						<!--<ul class="cl-effect-1">-->
+							<!--<li><a href="sports.html">Football</a></li>                                             -->
+							<!--<li><a href="sports.html">Cricket</a></li>-->
+							<!--<li><a href="sports.html">Tennis</a></li> -->
+							<!--<li><a href="sports.html">Shattil</a></li>  -->
+						<!--</ul>-->
+						<!--&lt;!&ndash; script-for-menu &ndash;&gt;-->
+						<!--<script>-->
+							<!--$( "li a.menu" ).click(function() {-->
+							<!--$( "ul.cl-effect-1" ).slideToggle( 300, function() {-->
+							<!--// Animation complete.-->
+							<!--});-->
+							<!--});-->
+						<!--</script>-->
+					<!--<li><a href="movies.html" class="song-icon"><span class="glyphicon glyphicon-music" aria-hidden="true"></span>Songs</a></li>-->
+					<!--<li><a href="news.html" class="news-icon"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>News</a></li>-->
 				  </ul>
 				  <!-- script-for-menu -->
 						<script>
@@ -302,7 +303,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="col-sm-10 show-grid-left main-grids">
 					<div class="recommended">
 						<div class="recommended-grids english-grid">
-							<div class="recommended-info">
+							<div id="onlineVideos" class="recommended-info">
 								<div class="heading">
 									<h3>International</h3>
 								</div>
@@ -311,102 +312,102 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								</div>
 								<div class="clearfix"> </div>
 							</div>
-							<div class="col-md-2 resent-grid recommended-grid show-video-grid">
-								<div class="resent-grid-img recommended-grid-img">
-									<a href="single.html"><img src="images/eg1.jpg" alt="" /></a>
-									<div class="time small-time show-time">
-										<p>7:34</p>
-									</div>
-									<div class="clck show-clock">
-										<span class="glyphicon glyphicon-time" aria-hidden="true"></span>
-									</div>
-								</div>
-								<div class="resent-grid-info recommended-grid-info">
-									<h5><a href="single.html" class="title">Varius sit sed Nullam interdum</a></h5>
-									<p class="author"><a href="#" class="author">John Maniya</a></p>
-									<p class="views">1,200 views</p>
-								</div>
-							</div>
-							<div class="col-md-2 resent-grid recommended-grid show-video-grid">
-								<div class="resent-grid-img recommended-grid-img">
-									<a href="single.html"><img src="images/eg2.jpg" alt="" /></a>
-									<div class="time small-time show-time">
-										<p>9:34</p>
-									</div>
-									<div class="clck show-clock">
-										<span class="glyphicon glyphicon-time" aria-hidden="true"></span>
-									</div>
-								</div>
-								<div class="resent-grid-info recommended-grid-info">
-									<h5><a href="single.html" class="title">Varius sit sed Nullam interdum</a></h5>
-									<p class="author"><a href="#" class="author">John Maniya</a></p>
-									<p class="views">4,200 views</p>
-								</div>
-							</div>
-							<div class="col-md-2 resent-grid recommended-grid show-video-grid">
-								<div class="resent-grid-img recommended-grid-img">
-									<a href="single.html"><img src="images/eg3.jpg" alt="" /></a>
-									<div class="time small-time show-time">
-										<p>3:04</p>
-									</div>
-									<div class="clck show-clock">
-										<span class="glyphicon glyphicon-time" aria-hidden="true"></span>
-									</div>
-								</div>
-								<div class="resent-grid-info recommended-grid-info">
-									<h5><a href="single.html" class="title">Varius sit sed Nullam interdum</a></h5>
-									<p class="author"><a href="#" class="author">John Maniya</a></p>
-									<p class="views">2,200 views</p>
-								</div>
-							</div>
-							<div class="col-md-2 resent-grid recommended-grid show-video-grid">
-								<div class="resent-grid-img recommended-grid-img">
-									<a href="single.html"><img src="images/eg4.jpg" alt="" /></a>
-									<div class="time small-time show-time">
-										<p>2:06</p>
-									</div>
-									<div class="clck show-clock">
-										<span class="glyphicon glyphicon-time" aria-hidden="true"></span>
-									</div>
-								</div>
-								<div class="resent-grid-info recommended-grid-info">
-									<h5><a href="single.html" class="title">Varius sit sed Nullam interdum</a></h5>
-									<p class="author"><a href="#" class="author">John Maniya</a></p>
-									<p class="views">2,114 views</p>
-								</div>
-							</div>
-							<div class="col-md-2 resent-grid recommended-grid show-video-grid">
-								<div class="resent-grid-img recommended-grid-img">
-									<a href="single.html"><img src="images/eg1.jpg" alt="" /></a>
-									<div class="time small-time show-time">
-										<p>3:23</p>
-									</div>
-									<div class="clck show-clock">
-										<span class="glyphicon glyphicon-time" aria-hidden="true"></span>
-									</div>
-								</div>
-								<div class="resent-grid-info recommended-grid-info">
-									<h5><a href="single.html" class="title">Varius sit sed Nullam interdum</a></h5>
-									<p class="author"><a href="#" class="author">John Maniya</a></p>
-									<p class="views">2,200 views</p>
-								</div>
-							</div>
-							<div class="col-md-2 resent-grid recommended-grid show-video-grid">
-								<div class="resent-grid-img recommended-grid-img">
-									<a href="single.html"><img src="images/eg2.jpg" alt="" /></a>
-									<div class="time small-time show-time">
-										<p>4:23</p>
-									</div>
-									<div class="clck show-clock">
-										<span class="glyphicon glyphicon-time" aria-hidden="true"></span>
-									</div>
-								</div>
-								<div class="resent-grid-info recommended-grid-info">
-									<h5><a href="single.html" class="title">Varius sit sed Nullam interdum</a></h5>
-									<p class="author"><a href="#" class="author">John Maniya</a></p>
-									<p class="views">2,114 views</p>
-								</div>
-							</div>
+							<!--<div class="col-md-2 resent-grid recommended-grid show-video-grid">-->
+								<!--<div class="resent-grid-img recommended-grid-img">-->
+									<!--<a href="single.html"><img src="images/eg1.jpg" alt="" /></a>-->
+									<!--<div class="time small-time show-time">-->
+										<!--<p>7:34</p>-->
+									<!--</div>-->
+									<!--<div class="clck show-clock">-->
+										<!--<span class="glyphicon glyphicon-time" aria-hidden="true"></span>-->
+									<!--</div>-->
+								<!--</div>-->
+								<!--<div class="resent-grid-info recommended-grid-info">-->
+									<!--<h5><a href="single.html" class="title">Varius sit sed Nullam interdum</a></h5>-->
+									<!--<p class="author"><a href="#" class="author">John Maniya</a></p>-->
+									<!--<p class="views">1,200 views</p>-->
+								<!--</div>-->
+							<!--</div>-->
+							<!--<div class="col-md-2 resent-grid recommended-grid show-video-grid">-->
+								<!--<div class="resent-grid-img recommended-grid-img">-->
+									<!--<a href="single.html"><img src="images/eg2.jpg" alt="" /></a>-->
+									<!--<div class="time small-time show-time">-->
+										<!--<p>9:34</p>-->
+									<!--</div>-->
+									<!--<div class="clck show-clock">-->
+										<!--<span class="glyphicon glyphicon-time" aria-hidden="true"></span>-->
+									<!--</div>-->
+								<!--</div>-->
+								<!--<div class="resent-grid-info recommended-grid-info">-->
+									<!--<h5><a href="single.html" class="title">Varius sit sed Nullam interdum</a></h5>-->
+									<!--<p class="author"><a href="#" class="author">John Maniya</a></p>-->
+									<!--<p class="views">4,200 views</p>-->
+								<!--</div>-->
+							<!--</div>-->
+							<!--<div class="col-md-2 resent-grid recommended-grid show-video-grid">-->
+								<!--<div class="resent-grid-img recommended-grid-img">-->
+									<!--<a href="single.html"><img src="images/eg3.jpg" alt="" /></a>-->
+									<!--<div class="time small-time show-time">-->
+										<!--<p>3:04</p>-->
+									<!--</div>-->
+									<!--<div class="clck show-clock">-->
+										<!--<span class="glyphicon glyphicon-time" aria-hidden="true"></span>-->
+									<!--</div>-->
+								<!--</div>-->
+								<!--<div class="resent-grid-info recommended-grid-info">-->
+									<!--<h5><a href="single.html" class="title">Varius sit sed Nullam interdum</a></h5>-->
+									<!--<p class="author"><a href="#" class="author">John Maniya</a></p>-->
+									<!--<p class="views">2,200 views</p>-->
+								<!--</div>-->
+							<!--</div>-->
+							<!--<div class="col-md-2 resent-grid recommended-grid show-video-grid">-->
+								<!--<div class="resent-grid-img recommended-grid-img">-->
+									<!--<a href="single.html"><img src="images/eg4.jpg" alt="" /></a>-->
+									<!--<div class="time small-time show-time">-->
+										<!--<p>2:06</p>-->
+									<!--</div>-->
+									<!--<div class="clck show-clock">-->
+										<!--<span class="glyphicon glyphicon-time" aria-hidden="true"></span>-->
+									<!--</div>-->
+								<!--</div>-->
+								<!--<div class="resent-grid-info recommended-grid-info">-->
+									<!--<h5><a href="single.html" class="title">Varius sit sed Nullam interdum</a></h5>-->
+									<!--<p class="author"><a href="#" class="author">John Maniya</a></p>-->
+									<!--<p class="views">2,114 views</p>-->
+								<!--</div>-->
+							<!--</div>-->
+							<!--<div class="col-md-2 resent-grid recommended-grid show-video-grid">-->
+								<!--<div class="resent-grid-img recommended-grid-img">-->
+									<!--<a href="single.html"><img src="images/eg1.jpg" alt="" /></a>-->
+									<!--<div class="time small-time show-time">-->
+										<!--<p>3:23</p>-->
+									<!--</div>-->
+									<!--<div class="clck show-clock">-->
+										<!--<span class="glyphicon glyphicon-time" aria-hidden="true"></span>-->
+									<!--</div>-->
+								<!--</div>-->
+								<!--<div class="resent-grid-info recommended-grid-info">-->
+									<!--<h5><a href="single.html" class="title">Varius sit sed Nullam interdum</a></h5>-->
+									<!--<p class="author"><a href="#" class="author">John Maniya</a></p>-->
+									<!--<p class="views">2,200 views</p>-->
+								<!--</div>-->
+							<!--</div>-->
+							<!--<div class="col-md-2 resent-grid recommended-grid show-video-grid">-->
+								<!--<div class="resent-grid-img recommended-grid-img">-->
+									<!--<a href="single.html"><img src="images/eg2.jpg" alt="" /></a>-->
+									<!--<div class="time small-time show-time">-->
+										<!--<p>4:23</p>-->
+									<!--</div>-->
+									<!--<div class="clck show-clock">-->
+										<!--<span class="glyphicon glyphicon-time" aria-hidden="true"></span>-->
+									<!--</div>-->
+								<!--</div>-->
+								<!--<div class="resent-grid-info recommended-grid-info">-->
+									<!--<h5><a href="single.html" class="title">Varius sit sed Nullam interdum</a></h5>-->
+									<!--<p class="author"><a href="#" class="author">John Maniya</a></p>-->
+									<!--<p class="views">2,114 views</p>-->
+								<!--</div>-->
+							<!--</div>-->
 							<div class="clearfix"> </div>
 						</div>
 					</div>
@@ -742,61 +743,61 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					</div>
 				</div>
 				<div class="col-md-2 show-grid-right">
-					<h3>Upcoming Channels</h3>
-					<div class="show-right-grids">
-						<ul>
-							<li class="tv-img"><a href="#"><img src="images/tv.png" alt="" /></a></li>
-							<li><a href="#">Spanish TV Shows</a></li>
-						</ul>
-					</div>
-					<div class="show-right-grids">
-						<ul>
-							<li class="tv-img"><a href="#"><img src="images/tv.png" alt="" /></a></li>
-							<li><a href="#">Italian TV Shows</a></li>
-						</ul>
-					</div>
-					<div class="show-right-grids">
-						<ul>
-							<li class="tv-img"><a href="#"><img src="images/tv.png" alt="" /></a></li>
-							<li><a href="#">Dutch TV Shows</a></li>
-						</ul>
-					</div>
-					<div class="show-right-grids">
-						<ul>
-							<li class="tv-img"><a href="#"><img src="images/tv.png" alt="" /></a></li>
-							<li><a href="#">Chinese TV Shows</a></li>
-						</ul>
-					</div>
-					<div class="show-right-grids">
-						<ul>
-							<li class="tv-img"><a href="#"><img src="images/tv.png" alt="" /></a></li>
-							<li><a href="#">Russian TV Shows</a></li>
-						</ul>
-					</div>
-					<div class="show-right-grids">
-						<ul>
-							<li class="tv-img"><a href="#"><img src="images/tv.png" alt="" /></a></li>
-							<li><a href="#">Hindi TV Shows</a></li>
-						</ul>
-					</div>
-					<div class="show-right-grids">
-						<ul>
-							<li class="tv-img"><a href="#"><img src="images/tv.png" alt="" /></a></li>
-							<li><a href="#">Telugu TV Shows</a></li>
-						</ul>
-					</div>
-					<div class="show-right-grids">
-						<ul>
-							<li class="tv-img"><a href="#"><img src="images/tv.png" alt="" /></a></li>
-							<li><a href="#">Tamil TV Shows</a></li>
-						</ul>
-					</div>
-					<div class="show-right-grids">
-						<ul>
-							<li class="tv-img"><a href="#"><img src="images/tv.png" alt="" /></a></li>
-							<li><a href="#">Marathi TV Shows</a></li>
-						</ul>
-					</div>
+					<h3 id="upcoming">Upcoming Channels</h3>
+					<!--<div class="show-right-grids">-->
+						<!--<ul>-->
+							<!--<li class="tv-img"><a href="#"><img src="images/tv.png" alt="" /></a></li>-->
+							<!--<li><a href="#">Spanish TV Shows</a></li>-->
+						<!--</ul>-->
+					<!--</div>-->
+					<!--<div class="show-right-grids">-->
+						<!--<ul>-->
+							<!--<li class="tv-img"><a href="#"><img src="images/tv.png" alt="" /></a></li>-->
+							<!--<li><a href="#">Italian TV Shows</a></li>-->
+						<!--</ul>-->
+					<!--</div>-->
+					<!--<div class="show-right-grids">-->
+						<!--<ul>-->
+							<!--<li class="tv-img"><a href="#"><img src="images/tv.png" alt="" /></a></li>-->
+							<!--<li><a href="#">Dutch TV Shows</a></li>-->
+						<!--</ul>-->
+					<!--</div>-->
+					<!--<div class="show-right-grids">-->
+						<!--<ul>-->
+							<!--<li class="tv-img"><a href="#"><img src="images/tv.png" alt="" /></a></li>-->
+							<!--<li><a href="#">Chinese TV Shows</a></li>-->
+						<!--</ul>-->
+					<!--</div>-->
+					<!--<div class="show-right-grids">-->
+						<!--<ul>-->
+							<!--<li class="tv-img"><a href="#"><img src="images/tv.png" alt="" /></a></li>-->
+							<!--<li><a href="#">Russian TV Shows</a></li>-->
+						<!--</ul>-->
+					<!--</div>-->
+					<!--<div class="show-right-grids">-->
+						<!--<ul>-->
+							<!--<li class="tv-img"><a href="#"><img src="images/tv.png" alt="" /></a></li>-->
+							<!--<li><a href="#">Hindi TV Shows</a></li>-->
+						<!--</ul>-->
+					<!--</div>-->
+					<!--<div class="show-right-grids">-->
+						<!--<ul>-->
+							<!--<li class="tv-img"><a href="#"><img src="images/tv.png" alt="" /></a></li>-->
+							<!--<li><a href="#">Telugu TV Shows</a></li>-->
+						<!--</ul>-->
+					<!--</div>-->
+					<!--<div class="show-right-grids">-->
+						<!--<ul>-->
+							<!--<li class="tv-img"><a href="#"><img src="images/tv.png" alt="" /></a></li>-->
+							<!--<li><a href="#">Tamil TV Shows</a></li>-->
+						<!--</ul>-->
+					<!--</div>-->
+					<!--<div class="show-right-grids">-->
+						<!--<ul>-->
+							<!--<li class="tv-img"><a href="#"><img src="images/tv.png" alt="" /></a></li>-->
+							<!--<li><a href="#">Marathi TV Shows</a></li>-->
+						<!--</ul>-->
+					<!--</div>-->
 				</div>
 				<div class="clearfix"> </div>
 			</div>

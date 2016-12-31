@@ -75,10 +75,6 @@ $(document).ready(function () {
                 );
             });
 
-            $("#recentlyVideo").after(
-            '<div class="clearfix"></div>'
-            );
-
         },
         error: function (xhr, textStatus) {
             console.log('错误');
