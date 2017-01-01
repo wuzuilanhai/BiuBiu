@@ -65,7 +65,7 @@ $(document).ready(function () {
                     // '   </div>'+
                     '   </div>' +
                     '   <div class="resent-grid-info recommended-grid-info">' +
-                    '   <h5><a href="single.html" class="title">' + video.remark + '</a></h5>' +
+                    '   <h5><a href="single.html?videoId='+video.id+'&videoUrl='+video.url+'" class="title">' + video.remark + '</a></h5>' +
                     '<p class="author"><a href="#" class="author">John Maniya</a></p>' +
                     '<p class="views">' + video.views + ' views</p>' +
                     '</div>' +
@@ -78,7 +78,7 @@ $(document).ready(function () {
                     '<div class="show-right-grids">' +
                     '   <ul>' +
                     '  <li class="tv-img"><a href="#"><img src="images/tv.png" alt="" /></a></li>' +
-                    '  <li><a href="#">'+video.name+'</a></li>' +
+                    '  <li><a href="single.html?videoId='+video.id+'&videoUrl='+video.url+'">'+video.name+'</a></li>' +
                     '</ul>' +
                     '</div>'
                 );

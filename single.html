@@ -20,6 +20,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <link href="css/style.css" rel='stylesheet' type='text/css' media="all"/>
     <script src="js/jquery-1.11.1.min.js"></script>
     <script src="flowplayer/flowplayer-3.2.8.min.js"></script>
+    <script src="js/custom/single.js"></script>
     <!--start-smoth-scrolling-->
     <!-- fonts -->
     <!--<link href='http://fonts.useso.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>-->
@@ -344,65 +345,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <div class="song-info">
                     <h3>Etiam molestie nisl eget consequat pharetra</h3>
                 </div>
-                <div class="video-grid">
-                    <a id="player" style="display:block;width:100%;height:360px;">
-                    </a>
-                    <!--<iframe src="rtmp://live.hkstv.hk.lxdns.com/live/hks" allowfullscreen></iframe>-->
-                    <script>
-                        str = 'rtmp://livetv.dhtv.cn:1935/live/news';
-                        arr = str.split('/');
-                        //rtmp://server/app/playpath
-                        protocol = arr[0];
-                        server = arr[2];
-                        app = arr[3];
-                        playpath = arr[4];
-                        flowplayer("player", "flowplayer/flowplayer-3.2.8.swf", {
-                            clip: {
-//										scaling:'orig',
-                                url: playpath,
-                                provider: 'rtmp',
-                                live: 'true'
-                            },
-                            plugins: {
-                                rtmp: {
-                                    url: 'flowplayer/flowplayer.rtmp-3.2.8.swf',
-                                    netConnectionUrl: protocol + '//' + server + '/' + app
-                                },
-                                controls: {
-                                    bottom: 0,
-                                    height: 24,
-                                    zIndex: 1,
-                                    fontColor: "#ffffff",
-                                    timeFontColor: "#333333",
-                                    playlist: true,//上一个、下一个按钮
-                                    play: true,//开端按钮
-                                    volume: true,//音量按钮
-                                    mute: true,//静音按钮
-                                    stop: true,//停止按钮
-                                    fullscreen: true, //全屏按钮
-                                    scrubber: true,//进度条
-                                    url: "flowplayer/flowplayer.controls-3.2.8.swf",//决意功能条的显示样式（功能条swf文件，按照项目定亦可引用:http://releases.flowplayer.org/swf/flowplayer.controls-3.2.12.swf）
-                                    time: true,//是否显示时候信息
-                                    autoHide: true,//功能条是否主动隐蔽
-                                    backgroundColor: "＃aedaff",//靠山色彩
-                                    backgroundGradient: [0.1, 0.1, 1.0],//靠山色彩渐变度（等分的点渐变）
-                                    opacity: 0.5,//功能条的透明度
-                                    borderRadius: "30",//功能条边角
-                                    tooltips: {
-                                        buttons: true,//是否显示
-                                        fullscreen: "全屏",//全屏按钮，鼠标指上时显示的文本
-                                        stop: "停止",
-                                        play: "开端",
-                                        volume: "音量",
-                                        mute: "静音",
-                                        next: "下一个",
-                                        previous: "上一个"
-                                    }
-                                }
-                            }
-                        });
-
-                    </script>
+                <div class="video-grid" id="videoDiv">
+                    <!--<a id="player" style="display:block;width:100%;height:360px;">-->
+                    <!--</a>-->
                 </div>
             </div>
             <div class="song-grid-right">

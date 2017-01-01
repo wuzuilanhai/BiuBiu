@@ -48,11 +48,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 </form>
             </div>
             <div class="header-top-right">
-                <div class="file">
+                <div class="file" id="uploadDiv">
                     <a href="upload.html">Upload</a>
                 </div>
-                <div class="signin">
-                    <a href="#small-dialog2" class="play-icon popup-with-zoom-anim">Sign Up</a>
+                <div class="signin" id="signUpDiv">
+                    <a href="#small-dialog3" class="play-icon popup-with-zoom-anim">Sign Up</a>
                     <!-- pop-up-box -->
                     <script type="text/javascript" src="js/modernizr.custom.min.js"></script>
                     <link href="css/popuo-box.css" rel="stylesheet" type="text/css" media="all"/>
@@ -74,7 +74,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         </div>
                         <div class="signup">
                             <form>
-                                <input type="text" class="email" placeholder="Mobile Number" maxlength="10"
+                                <input type="text" class="email" placeholder="Mobile Number" maxlength="10" required="required"
                                        pattern="[1-9]{1}\d{9}" title="Enter a valid mobile number"/>
                             </form>
                             <div class="continue-button">
@@ -99,13 +99,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                             </div>
                         </div>
                         <div class="signup">
-                            <form>
-                                <input type="text" class="email" placeholder="Email" required="required"
-                                       pattern="([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?" title="Enter a valid email"/>
-                                <input type="password" placeholder="Password" required="required" pattern=".{6,}"
-                                       title="Minimum 6 characters required" autocomplete="off"/>
-                                <input type="text" class="email" placeholder="Mobile Number" maxlength="10"
-                                       pattern="[1-9]{1}\d{9}" title="Enter a valid mobile number"/>
+                            <form id="registerForm" action="http://localhost:8080/user/register" method="post">
+                                <input type="text" class="email" placeholder="Email" required="required" name="loginEmail"
+                                       pattern="(^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$)" title="Enter a valid email"/>
+                                <input type="password" placeholder="Password" required="required" pattern=".{3,}" name="loginPassword"
+                                       title="Minimum 3 characters required" autocomplete="off"/>
+                                <input type="text" class="email" placeholder="Mobile Number" maxlength="12" name="loginPhone" required="required"
+                                       pattern="(0?1[3|4|5|8][0-9]\d{8}$)" title="Enter a valid mobile number"/>
                                 <input type="submit" value="Sign Up"/>
                             </form>
                         </div>
@@ -222,7 +222,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         });
                     </script>
                 </div>
-                <div class="signin">
+                <div class="signin"  id="signInDiv">
                     <a href="#small-dialog" class="play-icon popup-with-zoom-anim">Sign In</a>
                     <div id="small-dialog" class="mfp-hide">
                         <h3>Login</h3>
@@ -234,16 +234,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                 <a href="#">Connect with Google</a>
                             </div>
                             <div class="button-bottom">
-                                <p>New account? <a href="#small-dialog2"
+                                <p>New account? <a href="#small-dialog3"
                                                    class="play-icon popup-with-zoom-anim">Signup</a></p>
                             </div>
                         </div>
                         <div class="signup">
-                            <form>
-                                <input type="text" class="email" placeholder="Enter email / mobile" required="required"
-                                       pattern="([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?"/>
-                                <input type="password" placeholder="Password" required="required" pattern=".{6,}"
-                                       title="Minimum 6 characters required" autocomplete="off"/>
+                            <form action="http://localhost:8080/user/login" id="loginForm" method="post">
+                                <input type="text" class="email" placeholder="Enter email / mobile" required="required" name="loginAccout"
+                                       pattern="(^0?1[3|4|5|8][0-9]\d{8}$)|(^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$)"/>
+                                <input type="password" placeholder="Password" required="required" pattern=".{3,}" name="loginPassword"
+                                       title="Minimum 3 characters required" autocomplete="off"/>
                                 <input type="submit" value="LOGIN"/>
                             </form>
                             <div class="forgot">
