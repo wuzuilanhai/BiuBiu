@@ -59,7 +59,7 @@ $(document).ready(function () {
                 $("#recentlyVideo").after(
                     '<div class="col-md-4 resent-grid recommended-grid slider-top-grids">' +
                     '<div class="resent-grid-img recommended-grid-img">' +
-                    '<a href="single.html?videoId='+video.id+'&videoUrl='+video.url+'&videoIntro='+video.intro+'" alt=""/><img src="' + video.realUrl + '" alt=""/></a>' +
+                    '<a href="single.html?videoId='+video.id+'&videoUrl='+video.url+'&videoIntro='+video.intro+'" alt=""><img src="' + video.realUrl + '" alt=""/></a>' +
                     '<div class="time">' +
                     '<p>' + video.duration + '</p>' +
                     '</div>' +
