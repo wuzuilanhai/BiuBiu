@@ -3,7 +3,10 @@ $(document).ready(function () {
         url: 'http://localhost:8080/index',
         type: 'POST', //GET
         async: true,    //或false,是否异步
-        data: {},
+        data: {
+            "pageNum":1,
+            "pageSize":3
+        },
         timeout: 5000,    //超时时间
         dataType: 'json',    //返回的数据格式：json/xml/html/script/jsonp/text
         beforeSend: function (xhr) {
@@ -56,7 +59,7 @@ $(document).ready(function () {
                 $("#recentlyVideo").after(
                     '<div class="col-md-4 resent-grid recommended-grid slider-top-grids">' +
                     '<div class="resent-grid-img recommended-grid-img">' +
-                    '<a href="single.html?videoId='+video.id+'"><img src="' + video.realUrl + '" alt=""/></a>' +
+                    '<a href="single.html?videoId='+video.id+'&videoUrl='+video.url+'&videoIntro='+video.intro+'" alt=""/><img src="' + video.realUrl + '" alt=""/></a>' +
                     '<div class="time">' +
                     '<p>' + video.duration + '</p>' +
                     '</div>' +
@@ -65,7 +68,7 @@ $(document).ready(function () {
                     '  </div>' +
                     ' </div>' +
                     '  <div class="resent-grid-info recommended-grid-info">' +
-                    '   <h3><a href="single.html?videoId='+video.id+'&videoUrl='+video.url+'" class="title title-info">' + video.remark + '</a></h3>' +
+                    '   <h3><a href="single.html?videoId='+video.id+'&videoUrl='+video.url+'&videoIntro='+video.intro+'" class="title title-info">' + video.remark + '</a></h3>' +
                     '<ul>' +
                     '<li><p class="author author-info"><a href="#" class="author">John Maniya</a></p></li>' +
                     '<li class="right-list"><p class="views views-info">' + video.views + ' views</p></li>' +
@@ -211,6 +214,7 @@ $(document).ready(function () {
                     localStorage.removeItem("userEmail");
                     localStorage.removeItem("userPhone");
                     localStorage.removeItem("userId");
+                    localStorage.removeItem("userRealName");
                     localStorage.removeItem("token");
                     alert("注销成功!");
                     window.location.replace("http://localhost:63342/BiuBiu/index.html");

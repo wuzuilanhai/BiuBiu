@@ -3,7 +3,10 @@ $(document).ready(function () {
         url: 'http://localhost:8080/index',
         type: 'POST', //GET
         async: true,    //或false,是否异步
-        data: {},
+        data: {
+            "pageNum":1,
+            "pageSize":3
+        },
         timeout: 5000,    //超时时间
         dataType: 'json',    //返回的数据格式：json/xml/html/script/jsonp/text
         beforeSend: function (xhr) {
@@ -56,7 +59,7 @@ $(document).ready(function () {
                 $("#onlineVideos").after(
                     '<div class="col-md-2 resent-grid recommended-grid show-video-grid">' +
                     '  <div class="resent-grid-img recommended-grid-img">' +
-                    '   <a href="single.html"><img src="' + video.realUrl + '" alt="" /></a>' +
+                    '   <a href="single.html?videoId='+video.id+'&videoUrl='+video.url+'&videoIntro='+video.intro+'"><img src="' + video.realUrl + '" alt="" /></a>' +
                     '   <div class="time small-time show-time">' +
                     '   <p></p>' +
                     '</div>' +
@@ -65,7 +68,7 @@ $(document).ready(function () {
                     // '   </div>'+
                     '   </div>' +
                     '   <div class="resent-grid-info recommended-grid-info">' +
-                    '   <h5><a href="single.html?videoId='+video.id+'&videoUrl='+video.url+'" class="title">' + video.remark + '</a></h5>' +
+                    '   <h5><a href="single.html?videoId='+video.id+'&videoUrl='+video.url+'&videoIntro='+video.intro+'" class="title">' + video.remark + '</a></h5>' +
                     '<p class="author"><a href="#" class="author">John Maniya</a></p>' +
                     '<p class="views">' + video.views + ' views</p>' +
                     '</div>' +
@@ -78,7 +81,7 @@ $(document).ready(function () {
                     '<div class="show-right-grids">' +
                     '   <ul>' +
                     '  <li class="tv-img"><a href="#"><img src="images/tv.png" alt="" /></a></li>' +
-                    '  <li><a href="single.html?videoId='+video.id+'&videoUrl='+video.url+'">'+video.name+'</a></li>' +
+                    '  <li><a href="single.html?videoId='+video.id+'&videoUrl='+video.url+'&videoIntro='+video.intro+'">'+video.name+'</a></li>' +
                     '</ul>' +
                     '</div>'
                 );

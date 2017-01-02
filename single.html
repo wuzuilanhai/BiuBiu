@@ -385,7 +385,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 </script>
                 <div class="load_more">
                     <ul id="myList">
-                        <li>
+                        <li id="description">
                             <h4>Published on 15 June 2015</h4>
                             <p>Nullam fringilla sagittis tortor ut rhoncus. Nam vel ultricies erat, vel sodales leo.
                                 Maecenas pellentesque, est suscipit laoreet tincidunt, ipsum tortor vestibulum leo, ac
@@ -421,11 +421,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <div class="all-comments-info">
                     <a href="#">All Comments (8,657)</a>
                     <div class="box">
-                        <form>
-                            <input type="text" placeholder="Name" required=" ">
-                            <input type="text" placeholder="Email" required=" ">
-                            <input type="text" placeholder="Phone" required=" ">
-                            <textarea placeholder="Message" required=" "></textarea>
+                        <form id="sendComment" action="http://localhost:8080/comment/addComment" method="POST">
+                            <!--<input type="text" placeholder="Name" required=" ">-->
+                            <!--<input type="text" placeholder="Email" required=" ">-->
+                            <!--<input type="text" placeholder="Phone" required=" ">-->
+                            <textarea placeholder="Message" required="required" maxlength="140"
+                                      id="comment_msg"></textarea>
                             <input type="submit" value="SEND">
                             <div class="clearfix"></div>
                         </form>
@@ -438,7 +439,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         </ul>
                     </div>
                 </div>
-                <div class="media-grids">
+                <div class="media-grids" id="showCommentDiv">
                     <div class="media">
                         <h5>Tom Brown</h5>
                         <div class="media-left">
@@ -449,7 +450,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         <div class="media-body">
                             <p>Maecenas ultricies rhoncus tincidunt maecenas imperdiet ipsum id ex pretium hendrerit
                                 maecenas imperdiet ipsum id ex pretium hendrerit</p>
-                            <span>View all posts by :<a href="#"> Admin </a></span>
+                            <span>View all posts by :<a href="#"> Admin </a><a href="javascript:void(0);" id="reply">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reply</a></span>
                         </div>
                     </div>
                     <div class="media">
@@ -535,7 +536,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         </div>
         <div class="col-md-4 single-right">
             <h3>Up Next</h3>
-            <div class="single-grid-right">
+            <div class="single-grid-right" id="upcoming">
                 <div class="single-right-grids">
                     <div class="col-md-4 single-right-grid-left">
                         <a href="single.html"><img src="images/r1.jpg" alt=""/></a>
