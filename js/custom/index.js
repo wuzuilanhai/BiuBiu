@@ -4,8 +4,8 @@ $(document).ready(function () {
         type: 'POST', //GET
         async: true,    //或false,是否异步
         data: {
-            "pageNum":1,
-            "pageSize":3
+            "pageNum": 1,
+            "pageSize": 3
         },
         timeout: 5000,    //超时时间
         dataType: 'json',    //返回的数据格式：json/xml/html/script/jsonp/text
@@ -59,7 +59,7 @@ $(document).ready(function () {
                 $("#recentlyVideo").after(
                     '<div class="col-md-4 resent-grid recommended-grid slider-top-grids">' +
                     '<div class="resent-grid-img recommended-grid-img">' +
-                    '<a href="single.html?videoId='+video.id+'&videoUrl='+video.url+'&videoIntro='+video.intro+'" alt=""><img src="' + video.realUrl + '" alt=""/></a>' +
+                    '<a href="single.html?videoId=' + video.id + '&videoUrl=' + video.url + '&videoIntro=' + video.intro + '" alt=""><img src="' + video.realUrl + '" alt=""/></a>' +
                     '<div class="time">' +
                     '<p>' + video.duration + '</p>' +
                     '</div>' +
@@ -68,7 +68,7 @@ $(document).ready(function () {
                     '  </div>' +
                     ' </div>' +
                     '  <div class="resent-grid-info recommended-grid-info">' +
-                    '   <h3><a href="single.html?videoId='+video.id+'&videoUrl='+video.url+'&videoIntro='+video.intro+'" class="title title-info">' + video.remark + '</a></h3>' +
+                    '   <h3><a href="single.html?videoId=' + video.id + '&videoUrl=' + video.url + '&videoIntro=' + video.intro + '" class="title title-info">' + video.remark + '</a></h3>' +
                     '<ul>' +
                     '<li><p class="author author-info"><a href="#" class="author">John Maniya</a></p></li>' +
                     '<li class="right-list"><p class="views views-info">' + video.views + ' views</p></li>' +
@@ -229,6 +229,20 @@ $(document).ready(function () {
                 console.log(textStatus);
             }
         });
+    });
+
+    $("#toUpload").click(function (e) {
+        if (localStorage.getItem("userId") == undefined) {
+            alert("您还未登录!");
+            e.preventDefault();
+        }
+    });
+
+    $("#toHistory").click(function (e) {
+        if (localStorage.getItem("userId") == undefined) {
+            alert("您还未登录!");
+            e.preventDefault();
+        }
     });
 
 });
