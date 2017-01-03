@@ -215,7 +215,8 @@
                             url: "http://localhost:8080/video/checkUpload",
                             data: {
                                 filename: file.name,
-                                chunk_size: uploader.settings.chunk_size
+                                chunk_size: uploader.settings.chunk_size,
+                                userId:localStorage.getItem("userId")
                             },
                             success: function (data) {
                                 if (data.message == "exist") {
