@@ -205,6 +205,7 @@
                 }
 
                 function updateList() {
+
                     var fileList = $('ul.plupload_filelist', target).html(''), inputCount = 0, inputHTML;
 
                     $.each(uploader.files, function (i, file) {
@@ -291,23 +292,7 @@
                     var videoRemark = $("#videoRemark").val();
                     var categoryId = $("#categoryId").val();
                     var videoIntro = $("#videoIntro").val();
-                    if (videoRemark == "") {
-                        alert("视频名称不能为空!");
-                        return;
-                    }
-                    if (categoryId == "") {
-                        alert("视频类别不能为空!");
-                        return;
-                    }
-                    if (videoIntro == "") {
-                        alert("视频简介不能为空!");
-                        return;
-                    }
-                    if ($("#categoryChildrenId") != undefined && $("#categoryChildrenId").val() == 0) {
-                        alert("视频类别不能为空!");
-                        return;
-                    }
-                    if ($("#categoryChildrenId") != undefined) {
+                    if ($("#categoryChildrenId") != undefined && $("#categoryChildrenId").val() > 0) {
                         categoryId = $("#categoryChildrenId").val();
                     }
                     uploader.setOption("multipart_params", {
@@ -438,7 +423,41 @@
                     }
                 });
 
-                uploader.bind('FilesAdded', updateList);
+                uploader.bind('FilesAdded', function (up,files) {
+                    var videoRemark = $("#videoRemark").val();
+                    var categoryId = $("#categoryId").val();
+                    var videoIntro = $("#videoIntro").val();
+                    if (videoRemark == "") {
+                        alert("视频名称不能为空!");
+                        for(var i in files){
+                            up.removeFile(files[i].id);
+                        }
+                        return;
+                    }
+                    if (categoryId == 0) {
+                        alert("视频类别不能为空!");
+                        for(var i in files){
+                            up.removeFile(files[i].id);
+                        }
+                        return;
+                    }
+                    if (videoIntro == "") {
+                        alert("视频简介不能为空!");
+                        for(var i in files){
+                            up.removeFile(files[i].id);
+                        }
+                        return;
+                    }
+                    if ($("#categoryChildrenId") != undefined && $("#categoryChildrenId").val() == 0) {
+                        alert("视频子类别不能为空!");
+                        for(var i in files){
+                            up.removeFile(files[i].id);
+                        }
+                        return;
+                    }
+
+                    updateList();
+                });
 
                 uploader.bind('FilesRemoved', function () {
                     // since the whole file list is redrawn for every change in the queue

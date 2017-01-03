@@ -15,7 +15,7 @@ $(document).ready(function () {
                     console.log(data);
                     console.log(textStatus);
                     console.log(jqXHR);
-                    if (data != null) {
+                    if (data != null && !$.isEmptyObject(data)) {
                         $("#categorySelect").after(
                             '<ul style="padding-left: 6.8em">' +
                             '    <li class="languages">' +

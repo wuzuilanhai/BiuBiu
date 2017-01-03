@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ba3c618e-e8e6-4155-a10f-a79535af82ff" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resource/Moxie.xap" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/custom/upload.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resource/Moxie.swf" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/Upload.html" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/Upload.html" afterPath="$PROJECT_DIR$/html/Upload.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/custom/index.js" afterPath="$PROJECT_DIR$/js/custom/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/custom/upload.js" afterPath="$PROJECT_DIR$/js/custom/upload.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/jquery.plupload.queue.js" afterPath="$PROJECT_DIR$/js/jquery.plupload.queue.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/upload.html" afterPath="$PROJECT_DIR$/upload.html" />
     </list>
@@ -36,57 +32,64 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="7277">
+            <state relative-caret-position="0">
               <caret line="383" column="43" selection-start-line="383" selection-start-column="43" selection-end-line="383" selection-end-column="43" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/custom/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="132" column="11" selection-start-line="132" selection-start-column="11" selection-end-line="132" selection-end-column="11" />
+            <state relative-caret-position="262">
+              <caret line="138" column="51" selection-start-line="138" selection-start-column="51" selection-end-line="138" selection-end-column="51" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Upload.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/Upload.html">
+      <file leaf-file-name="upload.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/upload.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="267" column="51" selection-start-line="267" selection-start-column="51" selection-end-line="267" selection-end-column="51" />
+            <state relative-caret-position="253">
+              <caret line="744" column="20" selection-start-line="744" selection-start-column="20" selection-end-line="744" selection-end-column="20" />
               <folding>
-                <element signature="e#14758#14764#0" expanded="true" />
-                <element signature="e#14764#14770#0" expanded="true" />
-                <element signature="e#14770#14776#0" expanded="true" />
-                <element signature="e#14781#14787#0" expanded="true" />
-                <element signature="e#14787#14793#0" expanded="true" />
-                <element signature="e#14793#14799#0" expanded="true" />
-                <element signature="e#14799#14805#0" expanded="true" />
-                <element signature="e#14805#14811#0" expanded="true" />
-                <element signature="e#14811#14817#0" expanded="true" />
-                <element signature="e#15293#15299#0" expanded="true" />
-                <element signature="e#15299#15305#0" expanded="true" />
-                <element signature="e#15305#15311#0" expanded="true" />
-                <element signature="e#15316#15322#0" expanded="true" />
-                <element signature="e#15322#15328#0" expanded="true" />
-                <element signature="e#15328#15334#0" expanded="true" />
-                <element signature="e#15334#15340#0" expanded="true" />
-                <element signature="e#15340#15346#0" expanded="true" />
-                <element signature="e#15346#15352#0" expanded="true" />
+                <element signature="e#14716#14722#0" expanded="true" />
+                <element signature="e#14722#14728#0" expanded="true" />
+                <element signature="e#14728#14734#0" expanded="true" />
+                <element signature="e#14739#14745#0" expanded="true" />
+                <element signature="e#14745#14751#0" expanded="true" />
+                <element signature="e#14751#14757#0" expanded="true" />
+                <element signature="e#14757#14763#0" expanded="true" />
+                <element signature="e#14763#14769#0" expanded="true" />
+                <element signature="e#14769#14775#0" expanded="true" />
+                <element signature="e#15251#15257#0" expanded="true" />
+                <element signature="e#15257#15263#0" expanded="true" />
+                <element signature="e#15263#15269#0" expanded="true" />
+                <element signature="e#15274#15280#0" expanded="true" />
+                <element signature="e#15280#15286#0" expanded="true" />
+                <element signature="e#15286#15292#0" expanded="true" />
+                <element signature="e#15292#15298#0" expanded="true" />
+                <element signature="e#15298#15304#0" expanded="true" />
+                <element signature="e#15304#15310#0" expanded="true" />
                 <element signature="n#style#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="e#16162#16168#0" expanded="true" />
-                <element signature="e#16168#16174#0" expanded="true" />
-                <element signature="e#16174#16180#0" expanded="true" />
-                <element signature="e#16185#16191#0" expanded="true" />
+                <element signature="e#16120#16126#0" expanded="true" />
+                <element signature="e#16126#16132#0" expanded="true" />
+                <element signature="e#16132#16138#0" expanded="true" />
+                <element signature="e#16143#16149#0" expanded="true" />
+                <element signature="e#16149#16155#0" expanded="true" />
+                <element signature="e#16155#16161#0" expanded="true" />
+                <element signature="e#16161#16167#0" expanded="true" />
+                <element signature="e#16167#16173#0" expanded="true" />
+                <element signature="e#16173#16179#0" expanded="true" />
                 <element signature="e#16191#16197#0" expanded="true" />
                 <element signature="e#16197#16203#0" expanded="true" />
                 <element signature="e#16203#16209#0" expanded="true" />
                 <element signature="e#16209#16215#0" expanded="true" />
                 <element signature="e#16215#16221#0" expanded="true" />
+                <element signature="e#16221#16227#0" expanded="true" />
+                <element signature="e#16227#16233#0" expanded="true" />
                 <element signature="e#16233#16239#0" expanded="true" />
                 <element signature="e#16239#16245#0" expanded="true" />
                 <element signature="e#16245#16251#0" expanded="true" />
@@ -104,27 +107,8 @@
                 <element signature="e#16317#16323#0" expanded="true" />
                 <element signature="e#16323#16329#0" expanded="true" />
                 <element signature="e#16329#16335#0" expanded="true" />
-                <element signature="e#16335#16341#0" expanded="true" />
-                <element signature="e#16341#16347#0" expanded="true" />
-                <element signature="e#16347#16353#0" expanded="true" />
-                <element signature="e#16353#16359#0" expanded="true" />
-                <element signature="e#16359#16365#0" expanded="true" />
-                <element signature="e#16365#16371#0" expanded="true" />
-                <element signature="e#16371#16377#0" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="upload.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/custom/upload.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="21" column="115" selection-start-line="21" selection-start-column="97" selection-end-line="21" selection-end-column="115" />
-              <folding>
-                <marker date="1483377450000" expanded="true" signature="869:888" ph="..." />
               </folding>
             </state>
           </provider>
@@ -133,14 +117,14 @@
       <file leaf-file-name="jquery.plupload.queue.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/jquery.plupload.queue.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="229">
-              <caret line="313" column="65" selection-start-line="313" selection-start-column="65" selection-end-line="313" selection-end-column="65" />
+            <state relative-caret-position="452">
+              <caret line="456" column="21" selection-start-line="456" selection-start-column="21" selection-end-line="456" selection-end-column="21" />
               <folding>
-                <marker date="1483378862000" expanded="true" signature="5416:5422" ph=" " />
-                <marker date="1483378862000" expanded="true" signature="5636:5642" ph=" " />
-                <marker date="1483378862000" expanded="true" signature="6342:6361" ph="..." />
-                <marker date="1483378862000" expanded="true" signature="6840:6846" ph=" " />
-                <marker date="1483378862000" expanded="true" signature="11760:11766" ph=" " />
+                <marker date="1483421566000" expanded="true" signature="5416:5422" ph=" " />
+                <marker date="1483421566000" expanded="true" signature="5636:5642" ph=" " />
+                <marker date="1483421566000" expanded="true" signature="6342:6361" ph="..." />
+                <marker date="1483421566000" expanded="true" signature="6840:6846" ph=" " />
+                <marker date="1483421566000" expanded="true" signature="11761:11767" ph=" " />
               </folding>
             </state>
           </provider>
@@ -173,11 +157,11 @@
         <option value="$PROJECT_DIR$/js/custom/single.js" />
         <option value="$PROJECT_DIR$/js/custom/index.js" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/upload.html" />
         <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/html/Upload.html" />
-        <option value="$PROJECT_DIR$/js/custom/upload.js" />
+        <option value="$PROJECT_DIR$/upload.html" />
         <option value="$PROJECT_DIR$/js/jquery.plupload.queue.js" />
+        <option value="$PROJECT_DIR$/js/custom/upload.js" />
       </list>
     </option>
   </component>
@@ -283,48 +267,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BiuBiu" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BiuBiu" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="html" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BiuBiu" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BiuBiu" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="flowplayer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BiuBiu" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BiuBiu" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -335,6 +277,9 @@
     <property name="HbShouldOpenHtmlAsHb" value="" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/resources" />
       <recent name="$PROJECT_DIR$/flowplayer" />
@@ -420,12 +365,12 @@
       <workItem from="1483090689307" duration="1259000" />
       <workItem from="1483155399798" duration="43496000" />
       <workItem from="1483359482145" duration="2713000" />
-      <workItem from="1483362963407" duration="11042000" />
+      <workItem from="1483362963407" duration="16009000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74357000" />
+    <option name="totallyTimeSpent" value="79324000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="724" extended-state="6" />
@@ -467,14 +412,6 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="6574">
           <caret line="346" column="86" selection-start-line="346" selection-start-column="86" selection-end-line="346" selection-end-column="86" />
           <folding />
@@ -486,11 +423,11 @@
         <state relative-caret-position="3838">
           <caret line="210" column="32" selection-start-line="210" selection-start-column="32" selection-end-line="210" selection-end-column="32" />
           <folding>
-            <marker date="1483378862000" expanded="true" signature="5416:5422" ph=" " />
-            <marker date="1483378862000" expanded="true" signature="5636:5642" ph=" " />
-            <marker date="1483378862000" expanded="true" signature="6342:6361" ph="..." />
-            <marker date="1483378862000" expanded="true" signature="6840:6846" ph=" " />
-            <marker date="1483378862000" expanded="true" signature="11760:11766" ph=" " />
+            <marker date="1483421566000" expanded="true" signature="5416:5422" ph=" " />
+            <marker date="1483421566000" expanded="true" signature="5636:5642" ph=" " />
+            <marker date="1483421566000" expanded="true" signature="6342:6361" ph="..." />
+            <marker date="1483421566000" expanded="true" signature="6840:6846" ph=" " />
+            <marker date="1483421566000" expanded="true" signature="11761:11767" ph=" " />
           </folding>
         </state>
       </provider>
@@ -742,7 +679,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7277">
+        <state relative-caret-position="0">
           <caret line="383" column="43" selection-start-line="383" selection-start-column="43" selection-end-line="383" selection-end-column="43" />
           <folding />
         </state>
@@ -786,14 +723,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="196">
           <caret line="266" column="35" selection-start-line="266" selection-start-column="35" selection-end-line="266" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/plupload.full.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="28" column="4193" selection-start-line="28" selection-start-column="4181" selection-end-line="28" selection-end-column="4193" />
           <folding />
         </state>
       </provider>
@@ -849,63 +778,96 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/custom/upload.js">
+    <entry file="file://$PROJECT_DIR$/js/custom/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="21" column="115" selection-start-line="21" selection-start-column="97" selection-end-line="21" selection-end-column="115" />
+        <state relative-caret-position="262">
+          <caret line="138" column="51" selection-start-line="138" selection-start-column="51" selection-end-line="138" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/jquery.polyglot.language.switcher.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="49">
+          <caret line="82" column="32" selection-start-line="82" selection-start-column="32" selection-end-line="82" selection-end-column="32" />
           <folding>
-            <marker date="1483377450000" expanded="true" signature="869:888" ph="..." />
+            <marker date="1434596282000" expanded="true" signature="9437:9444" ph="»" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/plupload.full.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="28" column="15049" selection-start-line="28" selection-start-column="15049" selection-end-line="28" selection-end-column="15049" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/jquery.plupload.queue.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="313" column="65" selection-start-line="313" selection-start-column="65" selection-end-line="313" selection-end-column="65" />
+        <state relative-caret-position="452">
+          <caret line="456" column="21" selection-start-line="456" selection-start-column="21" selection-end-line="456" selection-end-column="21" />
           <folding>
-            <marker date="1483378862000" expanded="true" signature="5416:5422" ph=" " />
-            <marker date="1483378862000" expanded="true" signature="5636:5642" ph=" " />
-            <marker date="1483378862000" expanded="true" signature="6342:6361" ph="..." />
-            <marker date="1483378862000" expanded="true" signature="6840:6846" ph=" " />
-            <marker date="1483378862000" expanded="true" signature="11760:11766" ph=" " />
+            <marker date="1483421566000" expanded="true" signature="5416:5422" ph=" " />
+            <marker date="1483421566000" expanded="true" signature="5636:5642" ph=" " />
+            <marker date="1483421566000" expanded="true" signature="6342:6361" ph="..." />
+            <marker date="1483421566000" expanded="true" signature="6840:6846" ph=" " />
+            <marker date="1483421566000" expanded="true" signature="11761:11767" ph=" " />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/Upload.html">
+    <entry file="file://$PROJECT_DIR$/js/custom/upload.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="267" column="51" selection-start-line="267" selection-start-column="51" selection-end-line="267" selection-end-column="51" />
+        <state relative-caret-position="152">
+          <caret line="18" column="51" selection-start-line="18" selection-start-column="51" selection-end-line="18" selection-end-column="51" />
           <folding>
-            <element signature="e#14758#14764#0" expanded="true" />
-            <element signature="e#14764#14770#0" expanded="true" />
-            <element signature="e#14770#14776#0" expanded="true" />
-            <element signature="e#14781#14787#0" expanded="true" />
-            <element signature="e#14787#14793#0" expanded="true" />
-            <element signature="e#14793#14799#0" expanded="true" />
-            <element signature="e#14799#14805#0" expanded="true" />
-            <element signature="e#14805#14811#0" expanded="true" />
-            <element signature="e#14811#14817#0" expanded="true" />
-            <element signature="e#15293#15299#0" expanded="true" />
-            <element signature="e#15299#15305#0" expanded="true" />
-            <element signature="e#15305#15311#0" expanded="true" />
-            <element signature="e#15316#15322#0" expanded="true" />
-            <element signature="e#15322#15328#0" expanded="true" />
-            <element signature="e#15328#15334#0" expanded="true" />
-            <element signature="e#15334#15340#0" expanded="true" />
-            <element signature="e#15340#15346#0" expanded="true" />
-            <element signature="e#15346#15352#0" expanded="true" />
+            <marker date="1483421957000" expanded="true" signature="895:914" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/upload.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="744" column="20" selection-start-line="744" selection-start-column="20" selection-end-line="744" selection-end-column="20" />
+          <folding>
+            <element signature="e#14716#14722#0" expanded="true" />
+            <element signature="e#14722#14728#0" expanded="true" />
+            <element signature="e#14728#14734#0" expanded="true" />
+            <element signature="e#14739#14745#0" expanded="true" />
+            <element signature="e#14745#14751#0" expanded="true" />
+            <element signature="e#14751#14757#0" expanded="true" />
+            <element signature="e#14757#14763#0" expanded="true" />
+            <element signature="e#14763#14769#0" expanded="true" />
+            <element signature="e#14769#14775#0" expanded="true" />
+            <element signature="e#15251#15257#0" expanded="true" />
+            <element signature="e#15257#15263#0" expanded="true" />
+            <element signature="e#15263#15269#0" expanded="true" />
+            <element signature="e#15274#15280#0" expanded="true" />
+            <element signature="e#15280#15286#0" expanded="true" />
+            <element signature="e#15286#15292#0" expanded="true" />
+            <element signature="e#15292#15298#0" expanded="true" />
+            <element signature="e#15298#15304#0" expanded="true" />
+            <element signature="e#15304#15310#0" expanded="true" />
             <element signature="n#style#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#16162#16168#0" expanded="true" />
-            <element signature="e#16168#16174#0" expanded="true" />
-            <element signature="e#16174#16180#0" expanded="true" />
-            <element signature="e#16185#16191#0" expanded="true" />
+            <element signature="e#16120#16126#0" expanded="true" />
+            <element signature="e#16126#16132#0" expanded="true" />
+            <element signature="e#16132#16138#0" expanded="true" />
+            <element signature="e#16143#16149#0" expanded="true" />
+            <element signature="e#16149#16155#0" expanded="true" />
+            <element signature="e#16155#16161#0" expanded="true" />
+            <element signature="e#16161#16167#0" expanded="true" />
+            <element signature="e#16167#16173#0" expanded="true" />
+            <element signature="e#16173#16179#0" expanded="true" />
             <element signature="e#16191#16197#0" expanded="true" />
             <element signature="e#16197#16203#0" expanded="true" />
             <element signature="e#16203#16209#0" expanded="true" />
             <element signature="e#16209#16215#0" expanded="true" />
             <element signature="e#16215#16221#0" expanded="true" />
+            <element signature="e#16221#16227#0" expanded="true" />
+            <element signature="e#16227#16233#0" expanded="true" />
             <element signature="e#16233#16239#0" expanded="true" />
             <element signature="e#16239#16245#0" expanded="true" />
             <element signature="e#16245#16251#0" expanded="true" />
@@ -923,24 +885,9 @@
             <element signature="e#16317#16323#0" expanded="true" />
             <element signature="e#16323#16329#0" expanded="true" />
             <element signature="e#16329#16335#0" expanded="true" />
-            <element signature="e#16335#16341#0" expanded="true" />
-            <element signature="e#16341#16347#0" expanded="true" />
-            <element signature="e#16347#16353#0" expanded="true" />
-            <element signature="e#16353#16359#0" expanded="true" />
-            <element signature="e#16359#16365#0" expanded="true" />
-            <element signature="e#16365#16371#0" expanded="true" />
-            <element signature="e#16371#16377#0" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/custom/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="132" column="11" selection-start-line="132" selection-start-column="11" selection-end-line="132" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
