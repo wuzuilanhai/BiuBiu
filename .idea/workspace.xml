@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ba3c618e-e8e6-4155-a10f-a79535af82ff" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/custom/history.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/history.html" afterPath="$PROJECT_DIR$/history.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/custom/index.js" afterPath="$PROJECT_DIR$/js/custom/index.js" />
     </list>
     <ignored path="BiuBiu.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -59,7 +56,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="history.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="history.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/custom/history.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="281">
@@ -76,6 +73,16 @@
                 <marker date="1483433606000" expanded="true" signature="8019:8052" ph="..." />
                 <marker date="1483433606000" expanded="true" signature="8211:8241" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="463">
+              <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -113,6 +120,7 @@
         <option value="$PROJECT_DIR$/js/custom/index.js" />
         <option value="$PROJECT_DIR$/history.html" />
         <option value="$PROJECT_DIR$/js/custom/history.js" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -303,12 +311,12 @@
       <workItem from="1483155399798" duration="43496000" />
       <workItem from="1483359482145" duration="2713000" />
       <workItem from="1483362963407" duration="21236000" />
-      <workItem from="1483429594297" duration="3092000" />
+      <workItem from="1483429594297" duration="3225000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="87643000" />
+    <option name="totallyTimeSpent" value="87776000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="724" extended-state="6" />
@@ -348,20 +356,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/js/jquery.plupload.queue.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3838">
-          <caret line="210" column="32" selection-start-line="210" selection-start-column="32" selection-end-line="210" selection-end-column="32" />
-          <folding>
-            <marker date="1483421566000" expanded="true" signature="5416:5422" ph=" " />
-            <marker date="1483421566000" expanded="true" signature="5636:5642" ph=" " />
-            <marker date="1483421566000" expanded="true" signature="6342:6361" ph="..." />
-            <marker date="1483421566000" expanded="true" signature="6840:6846" ph=" " />
-            <marker date="1483421566000" expanded="true" signature="11761:11767" ph=" " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/plupload.full.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -893,6 +887,14 @@
             <marker date="1483433606000" expanded="true" signature="8019:8052" ph="..." />
             <marker date="1483433606000" expanded="true" signature="8211:8241" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="463">
+          <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -1,0 +1,48 @@
+# -- Eclipse
+.mymetadata
+**/bin/
+#**/.classpath
+#**/.project
+**/.settings/
+**/.metadata/
+**/.myeclipse/
+**/logs/
+
+*.log
+*.log.lck
+**/*.log
+**/*.log.*
+
+# -- Intellij
+**/.idea/
+**/*.iml
+**/*.iws
+**/out/
+
+# -- Mac
+**/.DS_Store
+
+# -- Maven
+**/target/
+**/*.versionsBackup
+
+# -- bower
+**/bower_components/
+
+# -- node
+**/node_modules/
+
+# -- tar
+**/*.tar.gz
+**/*.rar
+
+# -- npm
+**/npm-debug.log
+
+# -- upload directory
+**/upload/
+**/converts/
+**/thumbnails/
+/.settings
+#/.project
+/target/
