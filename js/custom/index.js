@@ -249,7 +249,7 @@ $(document).ready(function () {
         var url = $("#searchForm").attr("action");
         var params = {};
         params["pageNum"] = 1;
-        params["pageSize"] = 10;
+        params["pageSize"] = 8;
         params["keyWord"] = $("#keyWord").val();
         $.ajax({
             url: url,
