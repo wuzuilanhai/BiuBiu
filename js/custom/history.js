@@ -37,6 +37,10 @@ $(document).ready(function () {
                 ' <li><a href="javascript:void(0);"  id="prev' + data.pageNum + '">&laquo;</a></li>'
             );
 
+            if (data.total <= 0) {
+                return;
+            }
+
             for (var i = 1; i <= data.total; i++) {
                 $(".pagination").append(
                     '<li><a href="javascript:void(0);" id="current' + i + '">' + i + '</a></li>'
@@ -144,7 +148,7 @@ $(document).ready(function () {
 
             $("a[id^=next]").click(function () {
                 var id = $(this).attr("id").substr(4) + 1;
-                if (id <= data.total) {
+                if (id >= data.total) {
                     id = data.total;
                 }
 

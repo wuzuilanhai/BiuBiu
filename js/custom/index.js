@@ -245,4 +245,272 @@ $(document).ready(function () {
         }
     });
 
+    $("#searchForm").on("submit", function (ev) {
+        var url = $("#searchForm").attr("action");
+        var params = {};
+        params["pageNum"] = 1;
+        params["pageSize"] = 10;
+        params["keyWord"] = $("#keyWord").val();
+        $.ajax({
+            url: url,
+            type: 'POST', //GET
+            async: true,    //或false,是否异步
+            data: params,
+            timeout: 5000,    //超时时间
+            dataType: 'json',    //返回的数据格式：json/xml/html/script/jsonp/text
+            success: function (data, textStatus, jqXHR) {
+                console.log(data);
+                console.log(textStatus);
+                console.log(jqXHR);
+                $(".main-grids").empty();
+                $(".main-grids").nextAll().remove();
+                $(".main-grids").append(
+                    '<div class="recommended">' +
+                    '    <div class="recommended-grids">' +
+                    '       </div>' +
+                    '       </div>' +
+                    '<div style="margin:0;padding:0;border:0;clear:both;"></div>'
+                );
+
+                $.each(data.list, function (i, video) {
+                    $(".recommended-grids").append(
+                        '<div class="col-md-3 resent-grid recommended-grid">' +
+                        '    <div class="resent-grid-img recommended-grid-img">' +
+                        '   <a href="single.html?videoId=' + video.id + '&videoUrl=' + video.url + '&videoIntro=' + video.intro + '"><img src="' + video.realUrl + '" alt=""/></a>' +
+                        '   <div class="time small-time">' +
+                        '   <p>' + video.duration + '</p>' +
+                        '</div>' +
+                        '<div class="clck small-clck">' +
+                        '   <span class="glyphicon glyphicon-time" aria-hidden="true"></span>' +
+                        '   </div>' +
+                        '   </div>' +
+                        '   <div class="resent-grid-info recommended-grid-info video-info-grid">' +
+                        '   <h5><a href="single.html?videoId=' + video.id + '&videoUrl=' + video.url + '&videoIntro=' + video.intro + '" class="title">' + video.remark + '</a></h5>' +
+                        '<ul>' +
+                        '<li><p class="author author-info"><a href="#" class="author">John Maniya</a></p></li>' +
+                        '<li class="right-list"><p class="views views-info">' + video.views + ' views</p></li>' +
+                        '</ul>' +
+                        '</div>' +
+                        '</div>'
+                    );
+                });
+
+                if (data.total <= 0) {
+                    return;
+                }
+
+                $(".main-grids").after(
+                    '<ul class="pagination">' +
+                    ' <li><a href="javascript:void(0);"  id="prev' + data.pageNum + '">&laquo;</a></li>'
+                );
+
+                for (var i = 1; i <= data.total; i++) {
+                    $(".pagination").append(
+                        '<li><a href="javascript:void(0);" id="current' + i + '">' + i + '</a></li>'
+                    );
+                }
+
+                $(".pagination").append(
+                    '<li><a href="javascript:void(0);" id="next' + data.pageNum + '">&raquo;</a></li>' +
+                    '</ul>'
+                );
+
+                $("a[id^=prev]").click(function () {
+                    var id = $(this).attr("id").substr(4) - 1;
+                    if (id <= 0) {
+                        id = 1;
+                    }
+
+                    $.ajax({
+                        url: "http://localhost:8080/video/search",
+                        type: 'POST', //GET
+                        async: true,    //或false,是否异步
+                        data: {
+                            "pageNum": id,
+                            "pageSize": params["pageSize"],
+                            "keyWord": $("#keyWord").val()
+                        },
+                        timeout: 5000,    //超时时间
+                        dataType: 'json',    //返回的数据格式：json/xml/html/script/jsonp/text
+                        success: function (data, textStatus, jqXHR) {
+                            console.log(data);
+                            console.log(textStatus);
+                            console.log(jqXHR);
+
+                            $(".main-grids").empty();
+                            $(".main-grids").append(
+                                '<div class="recommended">' +
+                                '    <div class="recommended-grids">' +
+                                '       </div>' +
+                                '       </div>' +
+                                '<div style="margin:0;padding:0;border:0;clear:both;"></div>'
+                            );
+
+                            $.each(data.list, function (i, video) {
+                                $(".recommended-grids").append(
+                                    '<div class="col-md-3 resent-grid recommended-grid">' +
+                                    '    <div class="resent-grid-img recommended-grid-img">' +
+                                    '   <a href="single.html?videoId=' + video.id + '&videoUrl=' + video.url + '&videoIntro=' + video.intro + '"><img src="' + video.realUrl + '" alt=""/></a>' +
+                                    '   <div class="time small-time">' +
+                                    '   <p>' + video.duration + '</p>' +
+                                    '</div>' +
+                                    '<div class="clck small-clck">' +
+                                    '   <span class="glyphicon glyphicon-time" aria-hidden="true"></span>' +
+                                    '   </div>' +
+                                    '   </div>' +
+                                    '   <div class="resent-grid-info recommended-grid-info video-info-grid">' +
+                                    '   <h5><a href="single.html?videoId=' + video.id + '&videoUrl=' + video.url + '&videoIntro=' + video.intro + '" class="title">' + video.remark + '</a></h5>' +
+                                    '<ul>' +
+                                    '<li><p class="author author-info"><a href="#" class="author">John Maniya</a></p></li>' +
+                                    '<li class="right-list"><p class="views views-info">' + video.views + ' views</p></li>' +
+                                    '</ul>' +
+                                    '</div>' +
+                                    '</div>'
+                                );
+                            });
+
+                        },
+                        error: function (xhr, textStatus) {
+                            console.log('错误');
+                            console.log(xhr);
+                            console.log(textStatus);
+                        }
+                    });
+
+                });
+
+                $("a[id^=current]").click(function () {
+                    var id = $(this).attr("id").substr(7);
+                    $.ajax({
+                        url: "http://localhost:8080/video/search",
+                        type: 'POST', //GET
+                        async: true,    //或false,是否异步
+                        data: {
+                            "pageNum": id,
+                            "pageSize": params["pageSize"],
+                            "keyWord": $("#keyWord").val()
+                        },
+                        timeout: 5000,    //超时时间
+                        dataType: 'json',    //返回的数据格式：json/xml/html/script/jsonp/text
+                        success: function (data, textStatus, jqXHR) {
+                            console.log(data);
+                            console.log(textStatus);
+                            console.log(jqXHR);
+
+                            $(".main-grids").empty();
+                            $(".main-grids").append(
+                                '<div class="recommended">' +
+                                '    <div class="recommended-grids">' +
+                                '       </div>' +
+                                '       </div>' +
+                                '<div style="margin:0;padding:0;border:0;clear:both;"></div>'
+                            );
+
+                            $.each(data.list, function (i, video) {
+                                $(".recommended-grids").append(
+                                    '<div class="col-md-3 resent-grid recommended-grid">' +
+                                    '    <div class="resent-grid-img recommended-grid-img">' +
+                                    '   <a href="single.html?videoId=' + video.id + '&videoUrl=' + video.url + '&videoIntro=' + video.intro + '"><img src="' + video.realUrl + '" alt=""/></a>' +
+                                    '   <div class="time small-time">' +
+                                    '   <p>' + video.duration + '</p>' +
+                                    '</div>' +
+                                    '<div class="clck small-clck">' +
+                                    '   <span class="glyphicon glyphicon-time" aria-hidden="true"></span>' +
+                                    '   </div>' +
+                                    '   </div>' +
+                                    '   <div class="resent-grid-info recommended-grid-info video-info-grid">' +
+                                    '   <h5><a href="single.html?videoId=' + video.id + '&videoUrl=' + video.url + '&videoIntro=' + video.intro + '" class="title">' + video.remark + '</a></h5>' +
+                                    '<ul>' +
+                                    '<li><p class="author author-info"><a href="#" class="author">John Maniya</a></p></li>' +
+                                    '<li class="right-list"><p class="views views-info">' + video.views + ' views</p></li>' +
+                                    '</ul>' +
+                                    '</div>' +
+                                    '</div>'
+                                );
+                            });
+
+                        },
+                        error: function (xhr, textStatus) {
+                            console.log('错误');
+                            console.log(xhr);
+                            console.log(textStatus);
+                        }
+                    });
+
+                });
+
+                $("a[id^=next]").click(function () {
+                    var id = $(this).attr("id").substr(4) + 1;
+                    if (id >= data.total) {
+                        id = data.total;
+                    }
+
+                    $.ajax({
+                        url: "http://localhost:8080/video/search",
+                        type: 'POST', //GET
+                        async: true,    //或false,是否异步
+                        data: {
+                            "pageNum": id,
+                            "pageSize": params["pageSize"],
+                            "keyWord": $("#keyWord").val()
+                        },
+                        timeout: 5000,    //超时时间
+                        dataType: 'json',    //返回的数据格式：json/xml/html/script/jsonp/text
+                        success: function (data, textStatus, jqXHR) {
+                            console.log(data);
+                            console.log(textStatus);
+                            console.log(jqXHR);
+
+                            $(".main-grids").empty();
+                            $(".main-grids").append(
+                                '<div class="recommended">' +
+                                '    <div class="recommended-grids">' +
+                                '       </div>' +
+                                '       </div>' +
+                                '<div style="margin:0;padding:0;border:0;clear:both;"></div>'
+                            );
+
+                            $.each(data.list, function (i, video) {
+                                $(".recommended-grids").append(
+                                    '<div class="col-md-3 resent-grid recommended-grid">' +
+                                    '    <div class="resent-grid-img recommended-grid-img">' +
+                                    '   <a href="single.html?videoId=' + video.id + '&videoUrl=' + video.url + '&videoIntro=' + video.intro + '"><img src="' + video.realUrl + '" alt=""/></a>' +
+                                    '   <div class="time small-time">' +
+                                    '   <p>' + video.duration + '</p>' +
+                                    '</div>' +
+                                    '<div class="clck small-clck">' +
+                                    '   <span class="glyphicon glyphicon-time" aria-hidden="true"></span>' +
+                                    '   </div>' +
+                                    '   </div>' +
+                                    '   <div class="resent-grid-info recommended-grid-info video-info-grid">' +
+                                    '   <h5><a href="single.html?videoId=' + video.id + '&videoUrl=' + video.url + '&videoIntro=' + video.intro + '" class="title">' + video.remark + '</a></h5>' +
+                                    '<ul>' +
+                                    '<li><p class="author author-info"><a href="#" class="author">John Maniya</a></p></li>' +
+                                    '<li class="right-list"><p class="views views-info">' + video.views + ' views</p></li>' +
+                                    '</ul>' +
+                                    '</div>' +
+                                    '</div>'
+                                );
+                            });
+
+                        },
+                        error: function (xhr, textStatus) {
+                            console.log('错误');
+                            console.log(xhr);
+                            console.log(textStatus);
+                        }
+                    });
+
+                });
+
+            },
+            error: function (xhr, textStatus) {
+                console.log('错误');
+                console.log(xhr);
+                console.log(textStatus);
+            }
+        });
+        ev.preventDefault();
+    });
+
 });
